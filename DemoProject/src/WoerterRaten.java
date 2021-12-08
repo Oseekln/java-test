@@ -22,6 +22,12 @@ public class WoerterRaten {
 		Scanner eingabe = new Scanner(System.in); 
 		System.out.println("Dein Tipp");
 		String tipp = eingabe.next();
+		
+		if (tipp.charAt(0) == wort.charAt(0)) {
+			System.out.println("1.Buchstabe Richtig");
+		}else {
+			System.out.println("1. Buchstabe falsch");
+		}
 	}
 
 }
